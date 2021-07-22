@@ -8,6 +8,6 @@ class UsersConfig(AppConfig):
 
     def ready(self):
         try:
-            import trader.users.signals  # noqa F401
+            import old_root.users.signals  # noqa F401
         except ImportError:
             pass

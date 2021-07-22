@@ -8,10 +8,10 @@ from django.http import HttpRequest
 from django.test import RequestFactory
 from django.urls import reverse
 
-from trader.users.forms import UserChangeForm
-from trader.users.models import User
-from trader.users.tests.factories import UserFactory
-from trader.users.views import (
+from old_root.users.forms import UserChangeForm
+from old_root.users.models import User
+from old_root.users.tests.factories import UserFactory
+from old_root.users.views import (
     UserRedirectView,
     UserUpdateView,
     user_detail_view,

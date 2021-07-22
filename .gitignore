@@ -67,6 +67,7 @@ celerybeat-schedule
 
 # Environments
 .venv
+.envs/
 venv/
 ENV/
 
@@ -175,6 +176,7 @@ typings/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
+.idea/*
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
@@ -331,5 +333,5 @@ trader/media/
 
 
 .env
-.envs/*
+.envs/.local
 !.envs/.local/

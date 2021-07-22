@@ -1,6 +1,6 @@
 import pytest
 
-from trader.users.models import User
+from old_root.users.models import User
 
 pytestmark = pytest.mark.django_db
 

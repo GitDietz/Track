@@ -1,7 +1,7 @@
 import pytest
 
-from trader.users.models import User
-from trader.users.tests.factories import UserFactory
+from old_root.users.models import User
+from old_root.users.tests.factories import UserFactory
 
 
 @pytest.fixture(autouse=True)
