@@ -251,16 +251,20 @@ LOGGING = {
         "verbose": {
             "format": "%(levelname)s %(asctime)s %(module)s "
             "%(process)d %(thread)d %(message)s"
+        },
+        "simple": {
+            "format": "[%(asctime)s] %(levelname)s %(module)s | %(funcName)s %(lineno)d | %(message)s"
         }
     },
     "handlers": {
         "console": {
             "level": "DEBUG",
             "class": "logging.StreamHandler",
-            "formatter": "verbose",
+            "formatter": "simple",
         }
     },
     "root": {"level": "INFO", "handlers": ["console"]},
+    "local_log": {'level': 'DEBUG', "handlers": ["console"]},
 }
 
 # Celery
